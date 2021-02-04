@@ -1,9 +1,13 @@
 import React from 'react'
+import ExercisesForm from '../components/ExercisesForm'
 
-export default class ExercisesNew extends React.Component{
+export default class ExercisesNew extends React.Component {
+    state = {
+        form:
+    }
     render(){
         return(
-           'Exercises NEW' 
+            <ExercisesForm></ExercisesForm>
         )
     }
 }
