@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Ejercicio 1",
+        "description": "lxxxx xxxxx xxx x x xxxxxx xxx x",
+        "leftColor": "#A74CF2",
+        "rightColor": "#617BFB"
+    },
+    {
+        "title": "Ejercicio 2",
+        "description": "aaa a aaa aaa a  a aaaaaa a",
+        "leftColor": "#A74CF2",
+        "rightColor": "#617BFB"
+    },
+    {
+        "title": "Ejercicio 3",
+        "description": "ssss s s ss sssssss  sssssss",
+        "leftColor": "#A74CF2",
+        "rightColor": "#617BFB"
+    }
+]
