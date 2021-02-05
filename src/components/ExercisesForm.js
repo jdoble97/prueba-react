@@ -1,21 +1,16 @@
 import React from 'react'
+import circle from '../images/circles.png'
+
 
 export default class ExercisesForm extends React.Component {
     constructor(props){
         super(props)
         this.state = {}
     }
-    handleChange = e => {
 
-        this.setState({
-            [e.target.name]: e.target.value
-        })
-    }
-    handleSubmit = e => {
-        e.preventDefault()
-        console.log(this.state);
-    }
     render() {
+        const {onChange, form, onSubmit} = this.props
+        console.log(form);
         return (
             <div className="container">
                 <form
@@ -27,8 +22,8 @@ export default class ExercisesForm extends React.Component {
                             className="form-control"
                             placeholder="title"
                             name="title"
-                            onChange={this.handleChange}
-                            value={this.state.title}
+                            onChange={onChange}
+                            value={form.title}
                         />
                     </div>
                     <div className="form-group">
@@ -37,8 +32,8 @@ export default class ExercisesForm extends React.Component {
                             className="form-control"
                             placeholder="description"
                             name="description"
-                            onChange={this.handleChange}
-                            value={this.state.description}
+                            onChange={onChange}
+                            value={form.description}
                         />
                     </div>
                     <div className="form-group">
@@ -47,8 +42,8 @@ export default class ExercisesForm extends React.Component {
                             className="form-control"
                             placeholder="img"
                             name="img"
-                            onChange={this.handleChange}
-                            value={this.state.img}
+                            onChange={onChange}
+                            value={form.img}
                         />
                     </div>
                     <div className="form-row">
@@ -58,8 +53,8 @@ export default class ExercisesForm extends React.Component {
                                 className="form-control"
                                 placeholder="leftColor"
                                 name="leftColor"
-                                onChange={this.handleChange}
-                                value={this.state.leftColor}
+                                onChange={onChange}
+                                value={form.leftColor}
                             />
                         </div>
                         <div className="col">
@@ -68,8 +63,8 @@ export default class ExercisesForm extends React.Component {
                                 className="form-control"
                                 placeholder="rightColor"
                                 name="rightColor"
-                                onChange={this.handleChange}
-                                value={this.state.rightColor}
+                                onChange={onChange}
+                                value={form.rightColor}
                             />
                         </div>
                     </div>
