@@ -37,7 +37,7 @@ export default class Exercises extends React.Component {
     }
 
     makeFetch() {
-        fetch('https://jsonplaceholder.typicode.comafa/posts', {
+        fetch('https://jsonplaceholder.typicode.com/posts', {
             method: 'GET'
         })
             .then(data => data.json())

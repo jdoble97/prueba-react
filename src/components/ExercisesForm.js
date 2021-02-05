@@ -1,5 +1,5 @@
 import React from 'react'
-import circle from '../images/circles.png'
+
 
 
 export default class ExercisesForm extends React.Component {
@@ -10,11 +10,10 @@ export default class ExercisesForm extends React.Component {
 
     render() {
         const {onChange, form, onSubmit} = this.props
-        console.log(form);
         return (
             <div className="container">
                 <form
-                    onSubmit={this.handleSubmit}
+                    onSubmit={onSubmit}
                 >
                     <div className="form-group">
                         <input
